@@ -1,0 +1,25 @@
+{
+  "name": "proyectoweb-master",
+  "version": "1.0.0",
+  "description": "\"# ProyectoWeb\"",
+  "main": "servidor.js",
+  "dependencies": {
+    "express": "^4.16.4",
+    "mysql": "^2.16.0",
+    "express-session": "^1.15.6"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gdcruz9/ProyectoWebFinal.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gdcruz9/ProyectoWebFinal/issues"
+  },
+  "homepage": "https://github.com/gdcruz9/ProyectoWebFinal#readme"
+}
