@@ -1,0 +1,38 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Registro</title>
+</head>
+<link rel="stylesheet" href="estilos/estilos.css" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<body>
+<h2>Registrate</h2>
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#">SuperDrive</a>
+    </div>
+    <ul class="nav navbar-nav">
+      <li class="active"><a href="/landing/landing.html">Home</a></li>
+      <li><a href="/login/login.html">Login</a></li>
+    </ul>
+  </div>
+</nav>
+	<div id="registro">
+        <form action="http://127.0.0.1:8111/sign_up" method="post">
+        <input type="text" name="nombre" id="nombre" placeholder="nombre" />
+        <input type="text" name="apellido" id="apellido" placeholder="apellido" />
+        <input type="email" name="email" id="email" placeholder="email" />
+        <input type="password" name="pass" id="pass" placeholder="contraseña" />
+        <div class="container">
+<div class="container">
+  <h4>Todos nuestros usuarios comienzan en Starter, pero mas adelante podrá cambiar de plan.</h4>
+</div>
+        <button id="guardar">Guardar</button>
+        </form>
+            </div>
+</body>
+</html>

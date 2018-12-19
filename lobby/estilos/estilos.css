@@ -1,0 +1,7 @@
+#ni {
+    list-style-type: none;
+}
+
+#btn1, #btn2{
+    display: block;
+}

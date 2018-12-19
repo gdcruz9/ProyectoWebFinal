@@ -1,0 +1,133 @@
+<html>
+<head>
+  <title>SuperDrive</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+  <link rel="stylesheet" href="estilos/estilos.css">
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+  <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+     <link rel="stylesheet"
+ href="http://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.2.0/styles/default.min.css">
+
+<script src="http://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.2.0/highlight.min.js"></script>
+</head>
+<body>
+    
+<nav class="navbar navbar-expand-lg navbar-light bg-light" id="bar">
+  <a class="navbar-brand" href="#">Navbar</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+    
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <li class="nav-item dropdown" id="ni">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Finder
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="/lobby">Descargar proyecto</a>
+            <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="/lobby">Cerrar proyecto</a>
+        </div>
+      </li> <li class="nav-item dropdown" id="ni">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Archivo
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+        <a class="dropdown-item" href="#" id="mnu-guardar" onclick="guardar()">Guardar proyecto</a>
+            <a class="dropdown-item" href="#" id="mnu-guardar-local">Guardar copia local del proyecto</a>
+        </div>
+      </li> <li class="nav-item dropdown" id="ni">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Ayuda
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="#">Ayuda</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="#">Acerca de...</a>
+        </div>
+      </li>
+  </div>
+</nav>
+
+<section class="cont">
+
+        <div class="div1">
+        <pre><code class="col-xl-4 col-lg-4 html" style="width: 300%;" contenteditable="true" id="txt-html">
+        </code></pre>
+        </div>
+        <div class="div2">
+        <pre><code class="col-xl-4 col-lg-4 javascript" contenteditable="true" id="txt-js">
+        </code></pre>
+        </div>
+        <div class="div3">
+        <pre><code class="col-xl-4 col-lg-4 css" contenteditable="true" id="txt-css">
+        </code></pre>
+        </div>
+
+</section>
+    
+  <nav class="floating-menu">
+      <div class="container">
+          <div class="row">
+    <div class="col-lg-1 col-1"><img src="imagenes/open.png" onclick="alerta()"></div>
+    <div class="col-lg-1 col-1"><img src="imagenes/save.png" onclick="alerta()"></div>
+    <div class="col-lg-1 col-1"><img src="imagenes/print.png" onclick="alerta()"></div>
+    <div class="col-lg-1 col-1"><img src="imagenes/close.png" onclick="alerta()"></div>
+          </div>
+   
+          </div>
+  </nav>
+    
+<div class="container">
+    <div class="row">
+        
+    </div>
+</div>
+    
+            <div class="row message" id="conversation">
+
+          <div class="row message-previous">
+            <div class="col-sm-12 previous">
+            </div>
+          </div>
+
+          
+        </div>
+    
+<div class="container">
+  <!-- Trigger the modal with a button -->
+
+  <!-- Modal -->
+  <div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Guardar</h4>
+        </div>
+        <div class="modal-body">
+          <p>Escriba el nombre del proyecto</p>
+        </div>
+          <input type="text" id="txt-nombre" style="width:70%;margin-left: 25%">
+          <p>Describa su proyecto</p>
+          <textarea id="txta-descr"></textarea>
+        <div class="modal-footer">
+            <button type="button" class="btn btn-default" id="btn-guardar">Guardar</button>
+          <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+  
+</div>
+    
+    
+    <script src="js/controlador.js"></script>
+</body>
+</html>

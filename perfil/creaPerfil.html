@@ -1,0 +1,59 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Perfil</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  
+</head>
+<body>
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#">SuperDrive</a>
+    </div>
+    <ul class="nav navbar-nav">
+    </ul>
+  </div>
+</nav>
+    
+<h2>Crea tu perfil</h2>
+
+<div class="container">
+    <div class="form-group">
+      <label for="usr">Nombre:</label>
+      <input type="text" class="form-control" id="nombre">
+    </div>
+    <div class="form-group">
+      <label for="apellido">Apellido:</label>
+      <input type="text" class="form-control" id="apellido">
+    </div>
+    <div class="form-group">
+      <label for="telefono">Email:</label>
+      <input type="email" class="form-control" id="email">
+    </div>
+     <div class="form-group">
+      <label for="apellido">Telefono:</label>
+      <input type="tel" class="form-control" id="telefono">
+    </div>
+    <h3>Intereses:</h3>
+    <div class="checkbox">
+  <label><input type="checkbox" value="" id="chk-js">JavaScript</label>
+</div>
+<div class="checkbox">
+  <label><input type="checkbox" value="" id="chk-html">HTML</label>
+</div>
+<div class="checkbox">
+  <label><input type="checkbox" value="" id="chk-css">CSS</label>
+</div>
+<div class="form-group">
+  <label for="comment">Descripcion breve:</label>
+  <textarea class="form-control" rows="5" id="descrip" ></textarea>
+</div>
+    <button type="button" id="btn-submit">Guardar</button>
+</div>
+  <script src="js/controladorCrea.js"></script>
+</body>
+</html>

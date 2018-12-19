@@ -1,0 +1,52 @@
+main {
+    margin-bottom: 0%;
+}
+
+#bar{
+
+}
+ 
+.floating-menu {
+    font-family: sans-serif;
+    background: white;
+    padding: 5px;
+    width: 80%;
+    margin: 10%;
+    z-index: 100;
+    bottom: 0;
+    position: fixed;
+    border: solid 5px black;
+}
+
+
+.floating-menu a, .floating-menu h3 {
+    font-size: 0.9em;
+    display: block;
+    margin: 0 0.5em;
+    color: white;
+}
+
+.floating-menu img{
+    width: 40px;
+}
+
+.cont{
+    width: 100%;
+}
+
+.div1, .div2, .div3{
+    margin-left: 0%;
+    width: 30%;
+    height: 50%;
+    display: inline-block;
+    float: left;
+    border: 1px solid black;
+}
+
+#txt-html, #txt-js, #txt-css{
+
+}
+
+#ni{
+   list-style-type: none;
+}

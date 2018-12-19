@@ -1,0 +1,23 @@
+#prod, #plan1, #plan2, #plan3{
+    border: solid 1px white;
+    padding: 15px;
+}
+
+#prod{
+    background: white;
+}
+
+#plan1{
+    background: rgb(79,195,247);
+    color: white;
+}
+
+#plan2{
+    background: rgb(3,155,229);
+    color: white;
+}
+
+#plan3{
+    background: rgb(60,88,124);
+    color: white;
+}

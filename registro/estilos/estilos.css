@@ -1,0 +1,18 @@
+h2{
+	text-align:center;
+	font-family:Verdana, Geneva, sans-serif;
+}
+
+#registro{
+	width:50%;
+	margin:0 auto;
+}
+
+#registro input, button, #sel1{
+	display:block;
+	padding:10px;
+	margin-top:15px;
+	marginn-bottom:15px;
+	margin-left:auto;
+	margin-right:auto;
+}
